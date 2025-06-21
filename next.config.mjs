@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
+  
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -10,9 +12,9 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  images: { unoptimized: true },
-  basePath: isProd ? '/my-portfolio' : '',
-  assetPrefix: isProd ? '/my-portfolio/' : '',
+  images: { unoptimized: true }, // Required if using <Image />
+  basePath: '/my-portfolio',
+  assetPrefix: '/my-portfolio/',
 }
 
 export default nextConfig
