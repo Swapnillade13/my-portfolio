@@ -12,7 +12,6 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  images: { unoptimized: true }, // Required if using <Image />
   basePath: '/my-portfolio',
   assetPrefix: '/my-portfolio/',
 }
